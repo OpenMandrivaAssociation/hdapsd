@@ -1,5 +1,2 @@
 sources:
-  "99-hdapsd.rules:"	95582bae841672d20be34ba4ec5ad8a7616cfc7a
-  "hdapsd-20090401.tar.gz:"	0d6517d36a0da8d5e765e5bc3059bad5d19a7e72
-  "hdapsd.event:"	24d7db3f1a3bcc06aedc6ea1d39adda6784c47f6
-  "hdapsd.sysconfig:"	24c0891a256c58775de497fe44a3ce028985e343
+  "hdapsd-20090401.tar.gz": 0d6517d36a0da8d5e765e5bc3059bad5d19a7e72

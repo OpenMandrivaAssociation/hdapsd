@@ -54,3 +54,15 @@ rm -rf %{buildroot}
 %doc ChangeLog
 %doc README
 
+
+
+%changelog
+* Sun Dec 05 2010 Oden Eriksson <oeriksson@mandriva.com> 0.0-0.20090401.2mdv2011.0
++ Revision: 611091
+- rebuild
+
+* Wed Mar 24 2010 Emmanuel Andry <eandry@mandriva.org> 0.0-0.20090401.1mdv2010.1
++ Revision: 527284
+- import hdapsd
+
+

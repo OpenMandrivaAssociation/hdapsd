@@ -1,0 +1,3 @@
+# emit event for each block device added
+ACTION=="add",    SUBSYSTEM=="block", KERNEL=="*[!0-9]", RUN="/usr/sbin/initctl emit block-device-added %k -eDEVNAME"
+

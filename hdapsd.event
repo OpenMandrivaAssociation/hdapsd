@@ -1,0 +1,14 @@
+# hdapsd starting script
+# laptops seldom have >2 HDD, so we care only about first two
+
+start on block-device-added sd[ab][!0-9]
+instance
+nice -5
+
+script
+	. /etc/sysconfig/hdapsd
+
+	/usr/sbin//hdapsd -b -l -d $1 $HDAPSD_OPTIONS
+end script
+
+
