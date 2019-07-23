@@ -1,8 +1,8 @@
 Summary:	HDAPS (Hard Disk Active Protection System) daemon
 Name:		hdapsd
 %define real_version 20090401
-Version:	0.0
-Release:	0.20090401.3
+Version:	20160215
+Release:	1
 License:	GPLv2+
 Group:		System/Kernel and hardware 
 URL:		http://hdaps.sourceforge.net
