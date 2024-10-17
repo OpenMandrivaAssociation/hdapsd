@@ -5,7 +5,7 @@ Version:	20160215
 Release:	1
 License:	GPLv2+
 Group:		System/Kernel and hardware 
-URL:		http://hdaps.sourceforge.net
+URL:		https://hdaps.sourceforge.net
 Source0:	hdapsd-%{real_version}.tar.gz
 Source1:	hdapsd.event
 Source2:	hdapsd.sysconfig
