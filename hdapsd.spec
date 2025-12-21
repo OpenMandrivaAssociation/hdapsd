@@ -13,6 +13,11 @@ Source3:	99-hdapsd.rules
 Patch0:		hdaps-20090401-fix-str-fmt.patch
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 %description
 hdapsd is a daemon that reads from the HDAPS (Hard Disk Active Protection
 System) driver and protects the hard disk from sudden movements that may
