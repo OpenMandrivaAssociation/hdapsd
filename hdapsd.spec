@@ -1,17 +1,15 @@
 Summary:	HDAPS (Hard Disk Active Protection System) daemon
 Name:		hdapsd
-%define real_version 20090401
-Version:	20160215
+Version:	20250908
 Release:	1
 License:	GPLv2+
-Group:		System/Kernel and hardware 
-URL:		https://hdaps.sourceforge.net
-Source0:	hdapsd-%{real_version}.tar.gz
+Group:		System/Kernel and hardware
+URL:		https://github.com/linux-thinkpad/hdapsd
+Source0:	https://github.com/linux-thinkpad/hdapsd/releases/download/%{version}/hdapsd-%{version}.tar.gz
 Source1:	hdapsd.event
 Source2:	hdapsd.sysconfig
 Source3:	99-hdapsd.rules
 Patch0:		hdaps-20090401-fix-str-fmt.patch
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -24,8 +22,8 @@ System) driver and protects the hard disk from sudden movements that may
 harm it.
 
 %prep
-%setup -q -n %{name}-%{real_version}
-%patch0 -p0
+%setup -q -n %{name}-%{version}
+%patch -P 0 -p1
 
 %build
 %configure2_5x
@@ -58,16 +56,3 @@ rm -rf %{buildroot}
 %doc COPYING
 %doc ChangeLog
 %doc README
-
-
-
-%changelog
-* Sun Dec 05 2010 Oden Eriksson <oeriksson@mandriva.com> 0.0-0.20090401.2mdv2011.0
-+ Revision: 611091
-- rebuild
-
-* Wed Mar 24 2010 Emmanuel Andry <eandry@mandriva.org> 0.0-0.20090401.1mdv2010.1
-+ Revision: 527284
-- import hdapsd
-
-
